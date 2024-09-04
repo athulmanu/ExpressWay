@@ -24,7 +24,7 @@
         </div>
         <nav class="navbar">
             <ul>
-                <li><a href="postFleet.html">Post Feet</a></li>
+                <li><a href="#" id="postFleetLink">Post Feet</a></li>
                 <li><a href="#">Vehicle Registration</a></li>
                 <li><a href="#">Find Feet</a></li>
                 <li><a href="#">Fuel Stations</a></li>
@@ -65,6 +65,24 @@
     </div>
 
     <script>
+        // Check if the user has already visited the login page
+        const hasVisitedLogin = localStorage.getItem('hasVisitedLogin');
+
+        // Handle the Post Fleet link click
+        document.getElementById('postFleetLink').onclick = function (event) {
+            event.preventDefault(); // Prevent the default link behavior
+            if (!hasVisitedLogin) {
+                // Redirect to login page on the first click
+                window.location.href = 'loginPage.html';
+                // Mark that the user has visited the login page
+                localStorage.setItem('hasVisitedLogin', 'true');
+            } else {
+                // Redirect to the Post Fleet page on subsequent clicks
+                window.location.href = 'postFleet.html';
+            }
+        };
+
+        // Handle the login button click
         document.getElementById('myButton').onclick = function () {
             window.location.href = 'loginPage.html';
         };
