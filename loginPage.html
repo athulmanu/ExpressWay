@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expressway</title>
+    <link rel="stylesheet" href="loginPage.css">
+</head>
+
+<body>
+
+    <div class="Container">
+        <div class="logoandplay_Container">
+            <div class="logo_container">
+
+                <img class="logo_image" src="images/ExpressWay_logo_transparent-removebg-preview.png"
+                    alt="Expressway Logo">
+                <p class="logo_belowtitle">Connecting You Faster, Every Mile</p>
+            </div>
+
+            <img class="google_play" src="images/Google Play Badge English Get It On Google Play.png" alt="googleplay">
+        </div>
+
+        <div class="login-container">
+            <h2>Please Login</h2>
+            <form id="loginForm">
+                <label for="phone">Phone no <span>[Aadhar linked]</span></label>
+                <input type="text" id="phone" name="phone" required>
+                <label for="otp">OTP</label>
+                <input type="text" id="otp" name="otp" required>
+                <div class="button-container">
+                    <button type="submit">Login</button>
+                    <button type="button" id="resendOtp">Resend OTP</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="loginfunctionality.js"></script>
+
+
+</body>
+
+</html>

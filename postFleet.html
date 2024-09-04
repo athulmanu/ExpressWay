@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>postFleet</title>
+    <link rel="stylesheet" href="postfleet.css">
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo_conatiner">
+            <img class="logo" src="images/ExpressWay_logo_transparent-removebg-preview.png" alt="Expressway Logo" ">
+            <p class=" logo_belowtitle">Connecting You Faster, Every Mile</p>
+        </div>
+        <h2>Good Day Felix !!</h2>
+        <div class="right_top">
+            <p class="right_top_p">Name</p>
+            <p class="right_top_p">Adhar No</p>
+            <p class="right_top_p">Address</p>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="home-icon">
+            <img src="images/vecteezy_flat-house-icon_47429171.png" alt="Home Icon">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#" class="active">Post Feet</a></li><span>|</span>
+            <li><a href="activeBids.html">Active Bids</a></li><span>|</span>
+            <li><a href="underTransmit.html">Under Transit</a></li><span>|</span>
+            <li><a href="history.html">History</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="form-section">
+            <div>
+                <label for="from">From:</label>
+                <input type="text" id="from" name="from">
+                <label for="lorry-type">Lorry type:</label>
+                <input type="text" id="lorry-type" name="lorry-type">
+                <label for="gst">GST:</label>
+                <input type="number" id="gst" name="gst">
+                <label for="pickup-address">Pick up address:</label>
+                <input type="text" id="pickup-address" name="pickup-address">
+                <label for="delivery-address">Delivery address:</label>
+                <input type="text" id="delivery-address" name="delivery-address">
+            </div>
+            <div>
+                <label for="to">To:</label>
+                <input type="text" id="to" name="to">
+                <label for="wheeler">Wheeler:</label>
+                <input type="text" id="wheeler" name="wheeler">
+                <label for="material">Material:</label>
+                <input type="text" id="material" name="material">
+                <label for="pickup-time">Additional pick up address (optional):</label>
+                <input type="text" id="Additional address (optional)" name="pickup-time">
+                <label for="delivery-time">Additional delivery address (optional)</label>
+                <input type="text" id="delivery-time" name="delivery-time">
+            </div>
+        </div>
+
+        <div class="checkbox-group">
+            <div>
+                <input type="checkbox" id="loading-included" name="loading-included">
+                <label for="loading-included">Loading charges Included</label>
+            </div>
+            <div>
+                <input type="checkbox" id="unloading-included" name="unloading-included">
+                <label for="unloading-included">Unloading charges Included</label>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <div>
+                <label for="quotation">Quotation:</label>
+                <input type="text" id="quotation" name="quotation" value="10000 RS" readonly>
+                <label for="advance">Advance:</label>
+                <input type="text" id="advance" name="advance" value="1500 RS" readonly>
+            </div>
+
+            <div class="cancellation_container">
+                <div class="terms">
+                    <input type="checkbox" id="acknowledge" name="acknowledge">
+                    <label for="acknowledge">Acknowledge Cancellation charges T&C</label>
+                </div>
+
+                <div class="cancellation-charges">
+                    <p>Cancel bid before approve = 10 RS charge</p>
+                    <p>Cancel bid After approve:</p>
+                    <table border="1">
+                        <tr>
+                            <td>0-1hr</td>
+                            <td>50rs</td>
+                        </tr>
+                        <tr>
+                            <td>1-3hr</td>
+                            <td>50% Advance</td>
+                        </tr>
+                        <tr>
+                            <td>>3hr</td>
+                            <td>100% Advance</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="payment-method">
+            <label>Payment method:</label><br>
+            <input type="radio" id="upi" name="payment-method" value="UPI">
+            <label for="upi">UPI</label>
+            <input type="radio" id="card" name="payment-method" value="Card">
+            <label for="card">Card</label>
+            <input type="radio" id="wallet" name="payment-method" value="Wallet">
+            <label for="wallet">Wallet</label>
+        </div>
+        <button class="pay-button">Pay & Post</button>
+    </div>
+
+
+</body>
+
+</html>
